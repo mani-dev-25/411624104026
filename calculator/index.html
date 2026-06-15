@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let a=15;
+        a="mani";
+        console.log(a);
+        let arr=[1,2,3,4,5];
+        // for (let i = 0; i < arr.length; i++) {
+        //     document.write("table-"+arr[i]+"<br>");
+        //     for(let j=1;j<=10;j++){
+        //         document.write(arr[i]+"X"+j+"="+arr[i]*j+"<br>")
+        //     }
+        // }
+        for(num of arr){
+            document.write(num);
+            document.write("<br>");
+        }
+        function add(a,b){
+            // let a=10;
+            // let b=20;
+            return a+b;
+        }
+        document.write("add="+add(35,29)+"<br>");
+        let b=(a)=>document.write(a+"<br>");
+        b(360);
+        let details = {
+            name:"mani",
+            age:19,
+            address:{
+                city:"chennai",
+                area:"pudhu nagar",
+                doorNo:"4/400"
+            }
+        }
+        document.write(details["name"]);
+    </script>
+</body>
+</html>

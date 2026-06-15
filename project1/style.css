@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
 }
 
@@ -28,12 +28,12 @@ h1 {
 }
 
 img {
-    width: 300px;
+    width: 50%;
     max-width: 100%;
     border: 1px solid black;
     border-radius: 50px;
-    display: block;
     margin-bottom: 20px;
+
 }
 
 video {
@@ -79,7 +79,10 @@ button:hover {
     padding: 20px;
 
 }
-
+.elements{
+    display: block;
+    text-align: center;
+}
 @media (max-width: 767px) {
     .grid-container {
         grid-template-columns:1fr 1fr;

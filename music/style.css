@@ -49,15 +49,52 @@ nav h2{
 
 .main-container{
 
-    padding: 35px;
+    padding: 25px;
 
     display: grid;
 
-    grid-template-columns: repeat(auto-fit,minmax(220px,220px));
-
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
 
     gap: 28px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+@media(max-width:768px){
+
+    .main-container{
+
+        grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+
+        padding: 15px;
+
+        gap: 18px;
+    }
+
+    .container{
+
+        padding: 12px;
+    }
+
+    .container img{
+
+        height: 150px;
+    }
+
+    .play-btn{
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 18px;
+    }
+
+    nav h2{
+
+        font-size: 24px;
+    }
+
 }
 
 /* CARD */

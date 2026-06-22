@@ -27,11 +27,14 @@ setTimeout(()=>{//queue:B,0 sec delay| here 0 less time so execute before B but 
 console.log("C")
 
 const promise = new Promise((resolve,reject)=>{
-    const success = true
+    const success = true;
+    setTimeout(()=>{//queue:B,0 sec delay| here 0 less time so execute before B but queue not execute before C
+    console.log("testing")
+},3000)
     if(success)
-        console.log("Done")
+        resolve("Done")
     else
-        console.log("Fail")
+        reject("Fail")
 })
 
 promise.then(res=>console.log(res)).catch(e=>console.log(e));
